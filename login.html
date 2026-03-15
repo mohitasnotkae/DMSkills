@@ -9,45 +9,37 @@ body{
 font-family:Arial;
 background:#eef2f5;
 text-align:center;
-padding-top:80px;
+padding-top:100px;
 }
 
 .card{
 background:white;
-width:350px;
+width:320px;
 margin:auto;
 padding:30px;
 border-radius:15px;
 box-shadow:0 10px 25px rgba(0,0,0,0.1);
 }
 
-.title{
-font-size:26px;
-color:#2c6fa3;
-margin-bottom:20px;
-}
-
 input{
 width:90%;
-padding:12px;
-margin:10px 0;
+padding:10px;
+margin:10px;
 border-radius:8px;
 border:1px solid #ccc;
-font-size:16px;
 }
 
-.btn{
-background:#1fa34a;
+button{
+background:#2c6fa3;
 color:white;
-padding:12px 25px;
 border:none;
+padding:12px 25px;
 border-radius:8px;
-font-size:18px;
 cursor:pointer;
 }
 
-.btn:hover{
-background:#148437;
+button:hover{
+background:#1e4f78;
 }
 
 </style>
@@ -57,36 +49,21 @@ background:#148437;
 
 <div class="card">
 
-<div class="title">📘 DMSkills Login</div>
+<h2>DMSkills Login</h2>
 
-<input type="text" id="userid" placeholder="Enter User ID">
+<input type="text" placeholder="User ID"><br>
 
-<input type="password" id="password" placeholder="Enter Password">
+<input type="password" placeholder="Password"><br>
 
-<br>
-
-<button class="btn" onclick="login()">Login</button>
+<button onclick="login()">Login</button>
 
 </div>
 
 <script>
 
 function login(){
-
-let uid=document.getElementById("userid").value;
-let pass=document.getElementById("password").value;
-
-if(uid==localStorage.getItem("userid") && pass==localStorage.getItem("password")){
-  
 alert("Login Successful");
-
 window.location.href="subjects.html";
-  
-}else{
-  
-alert("Invalid User ID or Password");
-}
-
 }
 
 </script>
