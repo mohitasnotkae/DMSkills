@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Select Subject - DMSkills</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#eef2f5;
+text-align:center;
+padding-top:60px;
+}
+
+.card{
+background:white;
+width:400px;
+margin:auto;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.title{
+font-size:28px;
+color:#2c6fa3;
+margin-bottom:25px;
+}
+
+.btn{
+display:block;
+width:80%;
+margin:10px auto;
+padding:15px;
+font-size:18px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+background:#1fa34a;
+color:white;
+}
+
+.btn:hover{
+background:#148437;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="title">📚 Select Subject</div>
+
+<button class="btn" onclick="openSubject('math')">Mathematics</button>
+
+<button class="btn" onclick="openSubject('science')">Science</button>
+
+<button class="btn" onclick="openSubject('reasoning')">Reasoning</button>
+
+<button class="btn" onclick="openSubject('general')">General Knowledge</button>
+
+</div>
+
+<script>
+
+function openSubject(subject){
+
+alert("Opening " + subject + " study material");
+
+}
+
+</script>
+
+</body>
+</html>
