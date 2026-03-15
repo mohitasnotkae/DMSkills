@@ -77,8 +77,13 @@ let uid=document.getElementById("userid").value;
 let pass=document.getElementById("password").value;
 
 if(uid==localStorage.getItem("userid") && pass==localStorage.getItem("password")){
+  
 alert("Login Successful");
+
+window.location.href="subjects.html";
+  
 }else{
+  
 alert("Invalid User ID or Password");
 }
 
