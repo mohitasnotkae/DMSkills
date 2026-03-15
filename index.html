@@ -72,13 +72,28 @@ color:#555;
 
 <div class="text">Unlimited Study Material</div>
 
-<button class="btn">₹29 Subscribe</button>
+<button class="btn" onclick="generateAccount()">₹29 Subscribe</button>
 
 <div class="pay">
 Pay via UPI / GPay / Paytm
 </div>
 
 </div>
+<script>
 
+function generateAccount(){
+
+let userID = Math.floor(10000 + Math.random() * 90000);
+let password = Math.floor(100000 + Math.random() * 900000);
+
+alert(
+"Your DMSkills Account\n\nUser ID: " + userID +
+"\nPassword: " + password +
+"\n\nSave this for login."
+);
+
+}
+
+</script>
 </body>
 </html>
